@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - 박성진 Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { navy: '#1B263B', accent: '#476394' },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(16px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+        body { font-family: 'Pretendard Variable', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold text-navy tracking-tight">박성진 <span class="text-gray-300 font-normal">| Portfolio</span></a>
+            <div class="flex gap-8 text-sm font-medium text-gray-500">
+                <a href="about.html" class="text-navy font-bold">About</a>
+                <a href="projects.html" class="hover:text-navy transition">Projects</a>
+                <a href="tmi.html" class="hover:text-navy transition">TMI</a>
+                <a href="contact.html" class="hover:text-navy transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-32 px-6 max-w-5xl mx-auto w-full">
+        <div class="text-center mb-16 animate-fade-in">
+            <span class="text-xs font-bold text-gray-400 tracking-[0.2em]">ABOUT ME</span>
+            <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-4">저를 소개합니다</h2>
+            <div class="w-10 h-1 bg-accent mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+            <div class="bg-gray-50 p-10 rounded-3xl animate-fade-in-up">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 leading-tight">금융 도메인에 강한<br>백엔드 개발자</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">코드 자체보다 그 코드가 만들어내는 비즈니스 흐름에 더 관심이 많습니다. 주식과 자산 시장이 돌아가는 원리를 파고드는 걸 좋아합니다.</p>
+                <p class="text-gray-600 leading-relaxed">컴퓨터공학 전공과 금융에 대한 관심을 바탕으로 <strong class="text-gray-900">증권사 IT 직무</strong>를 목표로 하고 있고, SSAFY 과정을 통해 실무 역량을 다지는 중입니다.</p>
+            </div>
+
+            <div class="space-y-6 animate-fade-in-up delay-100">
+                <div class="flex gap-6 p-8 border border-gray-100 rounded-2xl hover:shadow-md transition">
+                    <div class="text-3xl">🤝</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2 text-lg">의견을 모으는 리더십</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">축구 동아리 회장으로 활동하며, 강한 카리스마보다는 팀원들의 이야기를 듣고 흩어진 의견을 조율해 하나로 모으는 방식으로 팀을 이끌었습니다.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-8 border border-gray-100 rounded-2xl hover:shadow-md transition">
+                    <div class="text-3xl">⚡️</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2 text-lg">빠른 문제 해결력</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">코드가 막힐 때 새로운 접근을 먼저 제안하는 편이고, 다양한 성향의 동료들과도 무리 없이 협업하며 프로젝트를 진행합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24 animate-fade-in-up">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-gray-400 tracking-[0.2em]">WHY SSAFY</span>
+                <h3 class="text-2xl font-bold text-gray-900 mt-3">SSAFY를 선택한 이유</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-md transition">
+                    <div class="text-3xl mb-4">⏰</div>
+                    <h4 class="font-bold text-gray-900 mb-2">규칙적인 생활 습관</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">정해진 출퇴근 시간(9~6)에 맞춰 학습하면서, 개발자로서 꾸준하고 규칙적인 생활 패턴을 만들고 싶었습니다.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-md transition">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h4 class="font-bold text-gray-900 mb-2">함께 성장하는 환경</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">혼자 준비하는 것보다 동료들과 함께 코드를 리뷰하고 부딪히며 배우는 편이 저에게 더 잘 맞는다고 생각했습니다.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-md transition">
+                    <div class="text-3xl mb-4">🎯</div>
+                    <h4 class="font-bold text-gray-900 mb-2">학습에 몰입할 수 있는 환경</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">교육 기간 중 지원금을 받아 생활비 부담 없이 학습에만 집중할 수 있는 환경이 큰 이유였습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24 animate-fade-in-up">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-gray-400 tracking-[0.2em]">MY GOALS</span>
+                <h3 class="text-2xl font-bold text-gray-900 mt-3">이루고 싶은 목표</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 bg-gray-50 rounded-2xl">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-sm font-bold text-gray-500 mb-4">1</span>
+                    <h4 class="font-bold text-gray-900 mb-2">삼성 SW역량테스트 B형 취득</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">알고리즘 문제 해결 능력을 탄탄히 다져 B형 자격을 취득하는 것이 첫 번째 목표입니다.</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-sm font-bold text-gray-500 mb-4">2</span>
+                    <h4 class="font-bold text-gray-900 mb-2">Spring 제대로 알기</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">지금까지 배운 것에 안주하지 않고, Spring의 동작 원리까지 깊이 이해하는 백엔드 개발자가 되고 싶습니다.</p>
+                </div>
+                <div class="p-8 bg-accent/5 border-2 border-accent rounded-2xl">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-white text-sm font-bold mb-4">3</span>
+                    <h4 class="font-bold text-gray-900 mb-2">취업</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">SSAFY에서 다진 실력으로, 목표로 하는 증권사 IT 직무에 취업하는 것이 최종 목표입니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 text-gray-400 text-center py-8 text-xs">
+        <p>© 2026 박성진. All rights reserved.</p>
+    </footer>
+</body>
+</html>

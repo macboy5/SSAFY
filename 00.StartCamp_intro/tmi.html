@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TMI - 박성진 Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { navy: '#1B263B', accent: '#476394' },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(24px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: { 'fade-up': 'fadeUp 0.8s ease-out' }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+        body { font-family: 'Pretendard Variable', sans-serif; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1.5rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold text-navy tracking-tight">박성진 <span class="text-gray-300 font-normal">| Portfolio</span></a>
+            <div class="flex gap-8 text-sm font-medium text-gray-500">
+                <a href="about.html" class="hover:text-navy transition">About</a>
+                <a href="projects.html" class="hover:text-navy transition">Projects</a>
+                <a href="tmi.html" class="text-navy font-bold">TMI</a>
+                <a href="contact.html" class="hover:text-navy transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-32 px-6 max-w-6xl mx-auto w-full animate-fade-up">
+        <div class="text-center mb-20">
+            <span class="text-xs font-bold text-gray-400 tracking-[0.2em]">MY TMI & TASTE</span>
+            <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-4">이런 것들을 좋아합니다</h2>
+            <div class="w-10 h-1 bg-accent mx-auto rounded-full mb-8"></div>
+            <p class="text-gray-500 leading-relaxed">
+                관심사가 다양해서 어떤 주제로든 대화가 잘 통하는 편입니다.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <!-- 기존 카드들 유지 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">🏃‍♂️</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Football</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">주 포지션은 윙어 & 공미! 주말이면 필드를 누비며 스트레스를 풉니다.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">🎬</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Movies</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">인생 영화는 '타이타닉'과 '얼라이드'. 묵직하고 깊은 감성의 영화를 즐겨 봅니다.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">🎧</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Music</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">딘(DEAN)의 감각적인 R&B를 사랑합니다. 집중력을 높여주는 노동요 플레이리스트 대환영!</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">📈</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Tech & Finance</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">증권사 입사라는 목표! Agent System, 하네스 같은 인프라 트렌드와 스테이블코인 생태계에 흥미를 느끼고 있어요.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">🧩</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Escape Room</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">방탈출 도장 깨기를 즐깁니다. 힌트와 단서를 조합해 탈출할 때의 쾌감!</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-4xl mb-6">🐰</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">ILLIT Wonhee</h3>
+                <p class="text-gray-600 text-sm mb-6 h-20">아일릿 원희를 좋아합니다. 이유는 단순명쾌해요, 너무 귀엽거든요! 힐링 포션 그 자체.</p>
+            </div>
+        </div>
+
+        <!-- 원희 영상 섹션 추가 -->
+        <section class="bg-gray-50 border border-gray-100 rounded-[2rem] p-8 md:p-12 text-gray-900">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="flex-1">
+                    <h3 class="text-3xl font-bold mb-4">최애 힐링 영상 🐰</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        코딩하다 멘탈이 흔들릴 때마다 꺼내 보는 원희의 영상입니다.
+                        보고 있으면 에너지가 충전되는 것 같은 영상이에요.
+                    </p>
+                    <a href="#" class="inline-block bg-navy text-white font-bold px-6 py-3 rounded-full hover:bg-accent transition">더 많은 영상 보기</a>
+                </div>
+<div class="flex-1 w-full mt-6 md:mt-0">
+    <div class="video-container shadow-xl" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 1rem;">
+        <iframe 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            src="https://www.youtube-nocookie.com/embed/0Y3RAL7s0Jc" 
+            title="원희 영상" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-100 text-gray-400 text-center py-8 text-xs">
+        <p>© 2026 박성진. All rights reserved.</p>
+    </footer>
+</body>
+</html>

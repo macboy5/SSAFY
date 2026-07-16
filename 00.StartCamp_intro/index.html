@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박성진 - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1B263B',
+                        accent: '#476394'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(16px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+        body { font-family: 'Pretendard Variable', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold text-navy tracking-tight">박성진 <span class="text-gray-300 font-normal">| Portfolio</span></a>
+            <div class="flex gap-8 text-sm font-medium text-gray-500">
+                <a href="about.html" class="hover:text-navy transition">About</a>
+                <a href="projects.html" class="hover:text-navy transition">Projects</a>
+                <a href="tmi.html" class="hover:text-navy transition">TMI</a>
+                <a href="contact.html" class="hover:text-navy transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-6 pt-32 pb-24 animate-fade-in">
+        <div class="w-28 h-28 rounded-full mb-8 bg-gradient-to-br from-accent to-navy flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-accent/20">
+            SJ
+        </div>
+
+        <span class="inline-block text-xs font-bold tracking-widest text-accent bg-accent/10 px-4 py-1.5 rounded-full mb-6">
+            PRE-DEVELOPER · FINTECH
+        </span>
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            탄탄한 기본기로,<br class="hidden md:block"> <span class="text-accent">증권사 IT</span>를 준비합니다
+        </h1>
+
+        <p class="text-gray-500 max-w-xl text-lg mb-10 leading-relaxed">
+            컴퓨터공학 전공 지식에 금융 도메인 이해를 더해, 증권사 IT 직무를 목표로 성장하고 있는 예비 백엔드 개발자 <strong class="text-gray-900">박성진</strong>입니다.
+        </p>
+
+        <div class="flex gap-4 justify-center">
+            <a href="about.html" class="px-8 py-3.5 bg-navy text-white font-bold rounded-full hover:bg-accent transition transform hover:-translate-y-0.5">About Me</a>
+            <a href="contact.html" class="px-8 py-3.5 border border-gray-200 text-gray-600 font-bold rounded-full hover:border-navy hover:text-navy transition transform hover:-translate-y-0.5">Contact</a>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 text-gray-400 text-center py-8 text-xs">
+        <p>© 2026 박성진. All rights reserved.</p>
+    </footer>
+</body>
+</html>
