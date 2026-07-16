@@ -144,6 +144,8 @@ class PostUpdate(BaseModel):
 
 
 class CourseItemOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
     sort_order: int
     content: ContentSummary
 

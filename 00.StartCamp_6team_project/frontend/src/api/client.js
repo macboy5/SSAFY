@@ -1,4 +1,6 @@
-const BASE_URL = '/api'
+const BASE_URL = String(
+  import.meta.env.VITE_API_BASE_URL || 'https://myseoulmate.onrender.com/api',
+).trim().replace(/\/+$/, '')
 const TOKEN_KEY = 'seoulmates.auth-token'
 const responseCache = new Map()
 const pendingGets = new Map()
