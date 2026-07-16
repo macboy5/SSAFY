@@ -13,6 +13,13 @@ migrate_community_courses(engine)
 
 app = FastAPI(title="SeoulMySoulMate API")
 
+# 1. TrustedHostMiddleware 추가 (필요 시)
+app.add_middleware(
+    TrustedHostMiddleware, 
+    allowed_hosts=["myseoulmate.onrender.com", "localhost", "127.0.0.1"]
+)
+
+# 2. CORS 미들웨어 (가장 중요)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -21,7 +28,7 @@ app.add_middleware(
         "https://ssafystartcamp.vercel.app"
     ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["*"], # OPTIONS를 포함한 모든 메서드 허용
     allow_headers=["*"],
 )
 app.add_middleware(GZipMiddleware, minimum_size=500)
