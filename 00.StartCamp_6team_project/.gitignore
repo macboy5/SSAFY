@@ -1,0 +1,10 @@
+venv/
+.env
+backend/app.db
+frontend/node_modules/
+<<<<<<< Updated upstream
+frontend/dist/
+.claude
+=======
+frontend/dist/
+>>>>>>> Stashed changes
