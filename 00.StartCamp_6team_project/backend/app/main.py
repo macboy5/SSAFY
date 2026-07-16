@@ -18,6 +18,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://ssafystartcamp-git-main-macboy5s-projects.vercel.app",
+        "https://ssafystartcamp.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
